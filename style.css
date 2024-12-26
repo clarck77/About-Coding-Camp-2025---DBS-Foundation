@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-image: url(img/2.jpg);
+    background-color: rgb(36, 36, 87);
+ }
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: left;
+}
+
+.container {
+    width: 960px;
+    margin: auto;
+}
+
+.header nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 2px;
+    padding-right: 20px;
+    color: red;
+}
+
+.header nav a:hover {
+    color: #000;
+}
+
+.hero {
+    height: 470px;
+    background-image: url(img/1.jpg);
+    background-size: cover;
+    background-position: center; 
+    border-top: 5px solid red;
+    border-bottom: 5px solid brown;
+}
+
+.text {
+    padding: 20px;
+    text-align: justify;
+    background-color: #f1f1f1;
+}
+
+h1 {
+    color: red;
+    font-size: 40px;
+}
+
+h2 {
+    color: red;
+    font-size: 25px;
+}
+
+footer {
+    background-color: brown;
+    padding: 3px;
+    color: white;
+    text-align: center;
+}
+
+/* From Uiverse.io by Mike11jr */ 
+.btn {
+ padding: 1.1em 2em;
+ background: none;
+ border: 2px solid #fff;
+ font-size: 15px;
+ color: #ffffff;
+ cursor: pointer;
+ position: relative;
+ overflow: hidden;
+ transition: all 0.3s;
+ border-radius: 12px;
+ background-color: #fe0000;
+ font-weight: bolder;
+ box-shadow: 0 2px 0 2px #000;
+}
+
+.btn a {
+ text-decoration: none;
+ color: #ffffff;
+}
+
+.btn:before {
+ content: "";
+ position: absolute;
+ width: 100px;
+ height: 120%;
+ background-color: #ff6700;
+ top: 50%;
+ transform: skewX(30deg) translate(-150%, -50%);
+ transition: all 0.5s;
+}
+
+.btn:hover {
+ background-color: #4cc9f0;
+ color: #fff;
+ box-shadow: 0 2px 0 2px #0d3b66;
+}
+
+.btn:hover::before {
+ transform: skewX(30deg) translate(150%, -50%);
+ transition-delay: 0.1s;
+}
+
+.btn:active {
+ transform: scale(0.9);
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 100%;
+    }
+
+    .header nav {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+}
+
+
