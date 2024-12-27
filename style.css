@@ -56,6 +56,13 @@ h2 {
     font-size: 25px;
 }
 
+img.about-me {
+    width : 70px;
+    height : 70px;
+    float : left;
+    padding-right : 10px;
+}
+
 footer {
     background-color: brown;
     padding: 3px;
@@ -150,5 +157,5 @@ footer {
   * Include this rule to trigger hasLayout and contain floats.
   */
  .cf {
-     *zoom: 1;
+     zoom: 1;
  }
