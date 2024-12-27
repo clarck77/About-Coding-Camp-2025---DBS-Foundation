@@ -4,7 +4,7 @@ body {
     margin: 0;
     background-size: cover;
     background-position: center;
-    background-image: url(img/2.jpg);
+    background-image: url(img/body.jpg);
     background-color: rgb(36, 36, 87);
  }
 
@@ -14,9 +14,14 @@ body {
     text-align: left;
 }
 
+.header h1 {
+    padding-top : 100px;
+}
+
 .container {
     width: 960px;
-    margin: auto;
+    position: relative;
+    margin: 30px auto;
 }
 
 .header nav a {
@@ -29,6 +34,26 @@ body {
 
 .header nav a:hover {
     color: #000;
+}
+
+.ribbon {
+    background-image : url(img/linkedin.png);
+    height : 200px;
+    width : 200px;
+    background-repeat: no-repeat;
+    position : absolute;
+    top : -32px;
+    left : -10px;
+}
+
+.ribbon2 {
+    background-image : url(img/github.png);
+    height : 200px;
+    width : 200px;
+    background-repeat : no-repeat;
+    position : absolute;
+    top : -19px;
+    right : -20px;
 }
 
 .hero {
@@ -70,54 +95,7 @@ footer {
     text-align: center;
 }
 
-/* From Uiverse.io by Mike11jr */ 
-.btn {
- padding: 1.1em 2em;
- background: none;
- border: 2px solid #fff;
- font-size: 15px;
- color: #ffffff;
- cursor: pointer;
- position: relative;
- overflow: hidden;
- transition: all 0.3s;
- border-radius: 12px;
- background-color: #fe0000;
- font-weight: bolder;
- box-shadow: 0 2px 0 2px #000;
-}
-
-.btn a {
- text-decoration: none;
- color: #ffffff;
-}
-
-.btn:before {
- content: "";
- position: absolute;
- width: 100px;
- height: 120%;
- background-color: #ff6700;
- top: 50%;
- transform: skewX(30deg) translate(-150%, -50%);
- transition: all 0.5s;
-}
-
-.btn:hover {
- background-color: #4cc9f0;
- color: #fff;
- box-shadow: 0 2px 0 2px #0d3b66;
-}
-
-.btn:hover::before {
- transform: skewX(30deg) translate(150%, -50%);
- transition-delay: 0.1s;
-}
-
-.btn:active {
- transform: scale(0.9);
-}
-
+/* For mobile phones: */
 @media screen and (max-width: 960px) {
     .container {
         width: 100%;
